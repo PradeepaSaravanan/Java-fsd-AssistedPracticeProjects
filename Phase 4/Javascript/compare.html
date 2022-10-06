@@ -1,0 +1,29 @@
+<!DOCTYPE html>>
+<html>
+    <head>
+        <title>
+            MY FIRST js
+        </title>
+    </head>
+    <body>
+
+        <script>
+            function compare()
+            {
+                var n1=document.getElementById("text").value;
+                var n2= document.getElementById("text").value;
+                if(n1==n2)
+                {
+                alert("Equal");
+                document.getElementById("demo").innerHTML="Equal";
+                }
+                else
+                alert("Not Equal");
+            }
+        </script>
+        Enter name1:<input type="text" id="text" >
+        Enter name2:<input type="text" id="text" >
+       <input type="text"  onblur="compare()">"
+        <p id="demo"></p>
+    </body>
+</html>

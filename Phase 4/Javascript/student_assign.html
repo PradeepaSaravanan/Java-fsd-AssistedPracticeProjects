@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>JavaScript Objects</h2>
+    <p id="demo"></p>
+
+    <script>
+        function Student(name,class_name,course)
+        {
+            this.name=name;
+            this.class_name=class_name
+            this.course=course;
+           
+        }
+        Student.prototype.age=15;
+        Student.prototype.display=function()
+        {
+            return "The student "+this.name +" who is "+this.age +" old is studying "+this.class_name+"  "+this.course+" course";
+        }
+        const stud= new Student("Kannan","12th std","English",17);
+        document.getElementById("demo").innerHTML= stud.display();
+        </script>
+</body>
+</html>

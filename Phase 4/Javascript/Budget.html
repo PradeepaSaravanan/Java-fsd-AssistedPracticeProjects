@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Budget management System</title>
+    </head>
+    <body>
+     
+        Task name : <input type="text" id="task" >
+        Amount    : <input type="text" id="amnt" onblur="calculation()">
+        
+        <p id="demo"></p>
+        <script>
+            function calculation(){
+              var total_amnt=50000;
+              var r_budget= new Array();
+         
+                var task= document.getElementById("task").value;
+                var amnt= parseInt(document.getElementById("amnt").value);
+                  var remaining= total_amnt-amnt;
+                  r_budget.push(task,amnt,remaining);
+                 document.getElementById("res").innerHTML=r_budget;
+                 document.getElementById("bud").innerHTML=r_budget;  
+                  document.getElementById("demo").innerHTML="Hello";
+            
+                }
+        
+
+            
+        </script>
+
+        <p id ="res">
+            
+        </p>
+        <table id="bud" >
+            <tr>
+                <th> S.No</th>
+                <th> Task Name</th>
+                <th> Amount</th>
+                <th> Remaining Budget</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td> r_budget[0]</td>
+                <td>r_budget[1]</td>
+                <td>r_budget[2]</td>
+                
+            </tr>
+        </table>
+
+     
+    </body>
+</html>

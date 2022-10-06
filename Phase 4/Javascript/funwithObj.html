@@ -1,0 +1,33 @@
+<!DOCTYPE html>>
+<html>
+    <head>
+        <title>Function with Onject</title>
+    </head>
+    <body>
+        <h2>JavaScript Functions</h2>
+<p>This example calls the fullName method of person, using it on person1:
+</p>
+ <p id="demo"></p>
+ <p id="demo1">
+
+ </p>
+ <script>
+     const person={
+        fullname:function(){
+            return this.FirstName+" "+this.LastName;
+       }
+    }
+    const person1={
+      FirstName:"Gokul",
+      LastName:"Kannan"
+    };
+    const person2={
+      FirstName:"Siva",
+      LastName:"ram"
+    };
+    document.getElementById("demo1").innerHTML=person.fullname.call(person1);
+    document.getElementById("demo").innerHTML=person.fullname.call(person2);
+
+ </script>
+    </body>
+</html>

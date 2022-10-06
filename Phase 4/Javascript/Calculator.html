@@ -1,0 +1,49 @@
+<!DOCTYPE html>>
+<html>
+    <head>
+        <title>
+            MY FIRST js
+        </title>
+    </head>
+    <body>
+        <script>
+            function calculator()
+            {
+                var n1=parseInt(document.getElementById("txt").value);
+                var n2=parseInt(document.getElementById("txt1").value);
+                var op=(prompt("enter ur choice"));
+                switch(op)
+                {
+                    case '+':
+                        document.getElementById("demo").innerHTML=n1+n2;
+                        break;
+                        case '-':
+                        document.getElementById("demo").innerHTML=n1-n2;
+                        break;
+                        case '*':
+                        document.getElementById("demo").innerHTML=n1*n2;
+                        break;
+                        case '/':
+                       /* document.getElementById("demo").innerHTML=n1/n2;
+                        break;
+                        case '%':*/
+
+                        // to view ans in text box use below code:
+                        case '/':
+                        document.getElementById("intxtbox").value=n1/n2;
+                        break;
+                       
+                    
+                }
+            }
+        </script>
+       
+            Enter num1:<input type="text" name="num1" id="txt">
+            Enter num2:<input type="text" name="num2" id="txt1">
+            <input type="submit" onclick="calculator()">
+
+            <p id="demo">fhghj</p>
+            <input type="text" id="intxtbox" readonly>
+        
+    </body>
+</html>

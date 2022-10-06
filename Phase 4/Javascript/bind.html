@@ -1,0 +1,21 @@
+<!DOCTYPE html>>
+<html>
+    <head>
+        <title>Function with Onject</title>
+    </head>
+    <body>
+        <h2>JavaScript Functions</h2>
+        <script>
+            let person={
+                name:'Suhanthan',
+                getName:function()
+                {
+                    console.log("")
+                    console.log(this.name);
+                }
+            };
+            let f= person.getName.bind(person);
+            setTimeout(f,6000);
+        </script>
+    </body>
+</html>
