@@ -1,0 +1,6 @@
+<p>logincred works!</p>
+Enter Username<input type="text" [(ngModel)]="user"><br><br>
+Enter Password<input type="text" [(ngModel)]="pwd"><br><br>
+<button (click)="validate()">Verify</button>
+<h1 [style.color]="status=='error' ? 'red' : 'blue'">{{msg}}</h1>
+<img [src]="imgpath">

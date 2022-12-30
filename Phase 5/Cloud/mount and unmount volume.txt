@@ -1,0 +1,16 @@
+
+
+MOUNT A VOLUME 
+sudo mkfs -t ext4 /dev/xvdf
+
+sudo mkdir /newvolume
+
+sudo mount /dev/xvdf /newvolume/
+
+cd /newvolume
+
+df -h 
+
+
+UNMOUNT A VOLUMe:
+sudo umount /dev/xvdf

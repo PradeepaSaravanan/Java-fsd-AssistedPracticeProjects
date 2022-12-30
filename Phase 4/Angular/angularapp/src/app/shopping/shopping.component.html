@@ -1,0 +1,6 @@
+<p>shopping works!</p>
+<li *ngFor="let product of productlist">
+    {{product.name}}
+    {{product.price}}
+</li>
+<button (click)="countchange(clickcount)">Change count</button>

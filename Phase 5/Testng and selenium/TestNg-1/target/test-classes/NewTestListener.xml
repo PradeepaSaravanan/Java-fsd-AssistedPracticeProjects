@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="ListenerExecution">
+<listeners>
+    <listener class-name = "testngexample.ListenersTestNG"></listener>
+    </listeners>
+  <test name="Test">
+    <classes>
+      <class name="testAnnotation.NewTestListener"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

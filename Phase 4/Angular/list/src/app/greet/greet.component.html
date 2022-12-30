@@ -1,0 +1,16 @@
+<p>greet works!</p>
+<h1>Welocome {{name}}</h1><!--interpolation-->
+<input type="text" [(ngModel)]="name">
+<button (click)="greet()"> Greet Me</button><br><br>
+
+<li *ngFor="let obj of FruitList">
+    {{obj.name}}
+    {{obj.price}}
+</li>
+<br><br>
+
+<button (click)="show=!show">{{show ? 'hide' : 'show'}}</button>
+show={{show}}
+<br>
+<div *ngIf="show; else elseBlock">Text to show</div>
+<ng-template #elseBlock>Alternate text while primary text is hidden</ng-template>
